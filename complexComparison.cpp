@@ -20,6 +20,12 @@ int main() {
     double d2 = std::hypot(w.real(), w.imag());
     std::cout << "The magnitude of the first complex number (" << r1 << " + " << i1 << "i) is " << magnitude << ".\n";
     std::cout << "The magnitude of the second complex number (" << r2 << " + " << i2 << "i) is " << magni2de << ".\n";
-    
+    if (d1>d2){
+        std::cout << "The magnitude of the first complex number is larger.\n";
+    } else if (d1<d2){
+        std::cout << "The magnitude of the second complex number is larger.\n";
+    } else {
+        std::cout << "The magnitudes are equal.\n";
+    }
     return 0;
 }
