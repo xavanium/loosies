@@ -16,13 +16,10 @@ int main() {
     std::cin >> i2;
     std::complex<double> z(r1, i1); //defines complex number as r1 + i1
     std::complex<double> w(r2, i2);
-    double magnitude = std::abs(z); //automatically calculates sqrt(a^2 + b^2) aka distance
-    double magni2de = std::abs(w);
     double d1 = std::hypot(z.real(), z.imag()); // sqrt(x*x + y*y)
     double d2 = std::hypot(w.real(), w.imag());
     std::cout << "The magnitude of the first complex number (" << r1 << " + " << i1 << "i) is " << magnitude << ".\n";
     std::cout << "The magnitude of the second complex number (" << r2 << " + " << i2 << "i) is " << magni2de << ".\n";
-    std::cout << "The distance of the first complex number is " << d1 << ".\n";\
-    std::cout << "The distance of the second complex number is " << d2 << ".\n";
+    
     return 0;
 }
