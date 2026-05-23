@@ -18,8 +18,8 @@ int main() {
     std::complex<double> w(r2, i2);
     double d1 = std::hypot(z.real(), z.imag()); // sqrt(x*x + y*y)
     double d2 = std::hypot(w.real(), w.imag());
-    std::cout << "The magnitude of the first complex number (" << r1 << " + " << i1 << "i) is " << d1 << ".\n";
-    std::cout << "The magnitude of the second complex number (" << r2 << " + " << i2 << "i) is " << d2 << ".\n";
+    std::cout << "The magnitude of the first complex number (" << z << ") is " << d1 << ".\n";
+    std::cout << "The magnitude of the second complex number (" << w << ") is " << d2 << ".\n";
     if (d1>d2){
         std::cout << "The magnitude of the first complex number is larger.\n";
     } else if (d1<d2){
