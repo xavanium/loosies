@@ -23,9 +23,9 @@ int main() {
     string name, power;
     int age;
     std::cout<<"What is your superhero name? ";
-    std::cin >> name;
+    std::getline(std::cin, power);
     std::cout << "What superpower do you have? ";
-    std::cin >> power;
+    std::getline(std::cin, power);
     std::cout << "How old are you? ";
     std::cin >> age;
     user_hero hero = user_hero(name, power, age);
