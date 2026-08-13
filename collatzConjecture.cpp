@@ -2,7 +2,7 @@
 //collatz conjecture simulator
 
 int main(){
-    int i;
+    long int i;
     std::cout << "Input any integer: ";
     std::cin >> i;
     while (i!=1){
